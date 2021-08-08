@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 5px;
+            height: 683px;
+        }
+        .auto-style3 {
+            height: 51px;
+            text-align: center;
+        }
+        .auto-style4 {
+            height: 94px;
+            text-align: center;
+            font-size: x-large;
+            color: #6600FF;
+        }
+        .auto-style5 {
+            font-size: large;
+        }
+        .auto-style6 {
+            text-align: center;
+            color: #0066FF;
+            height: 49px;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFCC" >
+    <form id="form1" runat="server">
+        <table class="auto-style1"  border="1">
+            <tr>
+                <td class="auto-style4"><strong>Online Library Management System</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style3"><strong>
+                    <asp:HyperLink ID="HyperLinkHome" runat="server" CssClass="auto-style5" NavigateUrl="~/Index.aspx">Home</asp:HyperLink>
+                    &nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLinkRegister" runat="server" CssClass="auto-style5" NavigateUrl="~/RegUser.aspx">Register User</asp:HyperLink>
+                    </strong><span class="auto-style5"><strong>&nbsp;&nbsp; </strong></span><strong>
+                    <asp:HyperLink ID="HyperLinkNewBook" runat="server" CssClass="auto-style5" NavigateUrl="~/AddBook.aspx"> Add New Book</asp:HyperLink>
+                    </strong><span class="auto-style5"><strong>&nbsp;&nbsp; </strong></span><strong>
+                    <asp:HyperLink ID="HyperLinkIssue" runat="server" CssClass="auto-style5" NavigateUrl="~/IssueBook.aspx">Issue Book</asp:HyperLink>
+                    </strong><span class="auto-style5"><strong>&nbsp;&nbsp; </strong></span><strong>
+                    <asp:HyperLink ID="HyperLinkBookList" runat="server" CssClass="auto-style5" NavigateUrl="~/BookList.aspx">Available Books List</asp:HyperLink>
+                    </strong><span class="auto-style5"><strong>&nbsp;&nbsp; </strong></span><strong>
+                    <asp:HyperLink ID="HyperLinkIssueList" runat="server" CssClass="auto-style5" NavigateUrl="~/IssueBookList.aspx">Issue BookList</asp:HyperLink>
+                    &nbsp;
+                    </strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <strong>All Right Reseved © 2021 Developed by Akshesh Patel - Aksheshpatel1277@gmail.com</strong></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
